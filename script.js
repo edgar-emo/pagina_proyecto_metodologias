@@ -18,14 +18,21 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form values
-        const formData = new FormData(this);
+        // Get form message element
+        const messageDiv = this.querySelector('.form-message');
         
-        // Simple validation and feedback
-        alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
+        // Show success message
+        messageDiv.textContent = '¡Gracias por tu mensaje! Nos pondremos en contacto pronto.';
+        messageDiv.className = 'form-message success';
+        messageDiv.style.display = 'block';
         
         // Reset form
         this.reset();
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            messageDiv.style.display = 'none';
+        }, 5000);
     });
 }
 

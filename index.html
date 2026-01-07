@@ -65,10 +65,14 @@
             <div class="container">
                 <h2>Contacto</h2>
                 <form class="contact-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
                     <button type="submit">Enviar</button>
+                    <div class="form-message" style="display: none;"></div>
                 </form>
             </div>
         </section>
