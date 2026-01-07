@@ -2,6 +2,8 @@
 
 Este es un proyecto web dedicado al estudio y aplicación de metodologías de desarrollo de software.
 
+![Vista previa de la página](https://github.com/user-attachments/assets/7da1d332-3a1e-492c-b6eb-1179d304189b)
+
 ## 🌐 Ver la Página Web
 
 La página está publicada en GitHub Pages y se puede acceder en:
