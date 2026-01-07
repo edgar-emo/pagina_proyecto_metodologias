@@ -12,6 +12,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Set current year in footer
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}
+
 // Form submission handler
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
