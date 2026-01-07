@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuestionario Final</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('img/recursos_fondo.jpg') no-repeat center center fixed,
+        radial-gradient(circle at 10% 10%, rgba(79,195,247,0.35) 0%, rgba(79,195,247,0.18) 20%, transparent 40%),
+        linear-gradient(180deg,#64c8ff 0%, #0f1724 60%, #061226 100%);
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: #f8f8f8;
+    }
+    .container {
+      position: relative;
+      top: 70px;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 900px;
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+    }
+    h1 {
+      color: #fffbe6;
+      text-shadow: 0 2px 12px #4fc3f7, 0 1px 0 #333;
+      margin-top: 0;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 48px;
+    }
+    .media-space {
+      margin: 40px 0;
+      text-align: left;
+      border: 2px dashed #4fc3f7;
+      border-radius: 10px;
+      padding: 24px;
+      background: rgba(79,195,247,0.08);
+      color: #bdeeff;
+    }
+    .quiz-question {
+      margin-bottom: 18px;
+    }
+    .quiz-feedback {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .btn {
+      margin-top: 20px;
+      font-size: 1.1em;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: #4fc3f7;
+      color: #fff;
+      box-shadow: 0 2px 12px #333;
+      transition: background 0.2s;
+    }
+    .btn-danger {
+      background: #e53935;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cuestionario Final</h1>
+    <section id="cuestionario" class="media-space">
+      <h2>Cuestionario Integrado (15 preguntas)</h2>
+      <form id="quiz-form">
+        <div class="quiz-question"><p>1. ¿Cuál es el objetivo principal del diseño de software?</p>
+          <label><input type="radio" name="q1" value="a"> Escribir código directamente</label><br>
+          <label><input type="radio" name="q1" value="b"> Organizar y estructurar programas</label><br>
+          <label><input type="radio" name="q1" value="c"> Crear manuales de usuario</label><br>
+          <label><input type="radio" name="q1" value="d"> Reducir memoria</label>
+          <div class="quiz-feedback" id="feedback-q1"></div>
+        </div>
+        <div class="quiz-question"><p>2. ¿Qué herramienta se usa para crear maquetados rápidos de interfaces?</p>
+          <label><input type="radio" name="q2" value="a"> Excel</label><br>
+          <label><input type="radio" name="q2" value="b"> Balsamiq</label><br>
+          <label><input type="radio" name="q2" value="c"> Word</label><br>
+          <label><input type="radio" name="q2" value="d"> Photoshop</label>
+          <div class="quiz-feedback" id="feedback-q2"></div>
+        </div>
+        <div class="quiz-question"><p>3. ¿Qué aspecto se prioriza en el diseño de interfaces?</p>
+          <label><input type="radio" name="q3" value="a"> Experiencia del usuario</label><br>
+          <label><input type="radio" name="q3" value="b"> Cantidad de código</label><br>
+          <label><input type="radio" name="q3" value="c"> Velocidad de ejecución</label><br>
+          <label><input type="radio" name="q3" value="d"> Uso de memoria</label>
+          <div class="quiz-feedback" id="feedback-q3"></div>
+        </div>
+        <div class="quiz-question"><p>4. ¿Qué establece la Primera Ley de la Termodinámica?</p>
+          <label><input type="radio" name="q4" value="a"> La energía se conserva</label><br>
+          <label><input type="radio" name="q4" value="b"> La entropía aumenta</label><br>
+          <label><input type="radio" name="q4" value="c"> La temperatura es medible</label><br>
+          <label><input type="radio" name="q4" value="d"> La energía libre de Gibbs</label>
+          <div class="quiz-feedback" id="feedback-q4"></div>
+        </div>
+        <div class="quiz-question"><p>5. ¿Qué magnitud aumenta en procesos espontáneos según la Segunda Ley?</p>
+          <label><input type="radio" name="q5" value="a"> Volumen</label><br>
+          <label><input type="radio" name="q5" value="b"> Entropía</label><br>
+          <label><input type="radio" name="q5" value="c"> Temperatura</label><br>
+          <label><input type="radio" name="q5" value="d"> Presión</label>
+          <div class="quiz-feedback" id="feedback-q5"></div>
+        </div>
+        <div class="quiz-question"><p>6. ¿Qué ocurre con la entropía en un cristal perfecto a 0 K?</p>
+          <label><input type="radio" name="q6" value="a"> Es cero</label><br>
+          <label><input type="radio" name="q6" value="b"> Es infinita</label><br>
+          <label><input type="radio" name="q6" value="c"> Es negativa</label><br>
+          <label><input type="radio" name="q6" value="d"> No cambia</label>
+          <div class="quiz-feedback" id="feedback-q6"></div>
+        </div>
+        <div class="quiz-question"><p>7. ¿Qué modelo de color se usa en pantallas digitales?</p>
+          <label><input type="radio" name="q7" value="a"> CMYK</label><br>
+          <label><input type="radio" name="q7" value="b"> RGB</label><br>
+          <label><input type="radio" name="q7" value="c"> HEX</label><br>
+          <label><input type="radio" name="q7" value="d"> HSB</label>
+          <div class="quiz-feedback" id="feedback-q7"></div>
+        </div>
+        <div class="quiz-question"><p>8. ¿Qué combinación cromática genera contraste fuerte?</p>
+          <label><input type="radio" name="q8" value="a"> Complementaria</label><br>
+          <label><input type="radio" name="q8" value="b"> Análoga</label><br>
+          <label><input type="radio" name="q8" value="c"> Monocromática</label><br>
+          <label><input type="radio" name="q8" value="d"> Tríada</label>
+          <div class="quiz-feedback" id="feedback-q8"></div>
+        </div>
+        <div class="quiz-question"><p>9. ¿Qué transmite generalmente el color azul?</p>
+          <label><input type="radio" name="q9" value="a"> Pasión</label><br>
+          <label><input type="radio" name="q9" value="b"> Confianza</label><br>
+          <label><input type="radio" name="q9" value="c"> Energía</label><br>
+          <label><input type="radio" name="q9" value="d"> Alegría</label>
+          <div class="quiz-feedback" id="feedback-q9"></div>
+        </div>
+        <div class="quiz-question"><p>10. ¿Qué caracteriza a los pueblos indígenas?</p>
+          <label><input type="radio" name="q10" value="a"> Migración constante</label><br>
+          <label><input type="radio" name="q10" value="b"> Vínculo histórico con territorios</label><br>
+          <label><input type="radio" name="q10" value="c"> Uso de tecnología moderna</label><br>
+          <label><input type="radio" name="q10" value="d"> Lengua universal</label>
+          <div class="quiz-feedback" id="feedback-q10"></div>
+        </div>
+        <div class="quiz-question"><p>11. ¿Qué instrumento internacional protege sus derechos?</p>
+          <label><input type="radio" name="q11" value="a"> Carta Magna</label><br>
+          <label><input type="radio" name="q11" value="b"> Convenio 169 OIT</label><br>
+          <label><input type="radio" name="q11" value="c"> Tratado de Versalles</label><br>
+          <label><input type="radio" name="q11" value="d"> Declaración de París</label>
+          <div class="quiz-feedback" id="feedback-q11"></div>
+        </div>
+        <div class="quiz-question"><p>12. ¿Cuál es el origen histórico de los pueblos afroamericanos?</p>
+          <label><input type="radio" name="q12" value="a"> Migración voluntaria</label><br>
+          <label><input type="radio" name="q12" value="b"> Comercio transatlántico de esclavos</label><br>
+          <label><input type="radio" name="q12" value="c"> Colonización europea</label><br>
+          <label><input type="radio" name="q12" value="d"> Revolución industrial</label>
+          <div class="quiz-feedback" id="feedback-q12"></div>
+        </div>
+        <div class="quiz-question"><p>13. ¿Qué movimiento histórico lideraron en el siglo XX?</p>
+          <label><input type="radio" name="q13" value="a"> Revolución francesa</label><br>
+          <label><input type="radio" name="q13" value="b"> Derechos civiles</label><br>
+          <label><input type="radio" name="q13" value="c"> Guerra fría</label><br>
+          <label><input type="radio" name="q13" value="d"> Independencia de América</label>
+          <div class="quiz-feedback" id="feedback-q13"></div>
+        </div>
+        <div class="quiz-question"><p>14. ¿Qué significa tomar decisiones responsables?</p>
+          <label><input type="radio" name="q14" value="a"> Elegir sin pensar</label><br>
+          <label><input type="radio" name="q14" value="b"> Analizar opciones considerando valores y consecuencias</label><br>
+          <label><input type="radio" name="q14" value="c"> Actuar impulsivamente</label><br>
+          <label><input type="radio" name="q14" value="d"> Evitar decidir</label>
+          <div class="quiz-feedback" id="feedback-q14"></div>
+        </div>
+        <div class="quiz-question"><p>15. ¿Qué habilidad evita decisiones impulsivas?</p>
+          <label><input type="radio" name="q15" value="a"> Pensamiento crítico</label><br>
+          <label><input type="radio" name="q15" value="b"> Memoria</label><br>
+          <label><input type="radio" name="q15" value="c"> Velocidad</label><br>
+          <label><input type="radio" name="q15" value="d"> Creatividad</label>
+          <div class="quiz-feedback" id="feedback-q15"></div>
+        </div>
+        <button type="button" onclick="checkQuiz()" class="btn btn-primary">Revisar respuestas</button>
+        <div id="score" style="margin-top:28px; font-size:1.3em; color:#ffe066; font-weight:bold; text-align:center;"></div>
+      </form>
+      <div id="volver-btn" style="display:none; text-align:center; margin: 32px 0 0 0;">
+        <a href="anclas.html" style="display:inline-block; background:#4fc3f7; color:#fff; font-weight:bold; padding:14px 32px; border-radius:8px; text-decoration:none; font-size:1.2em; box-shadow:0 2px 12px #333; transition:background 0.2s;">Volver al inicio</a>
+      </div>
+    </section>
+    <script>
+      function checkQuiz() {
+        const answers = {
+          q1: 'b',
+          q2: 'b',
+          q3: 'a',
+          q4: 'a',
+          q5: 'b',
+          q6: 'a',
+          q7: 'b',
+          q8: 'a',
+          q9: 'b',
+          q10: 'b',
+          q11: 'b',
+          q12: 'b',
+          q13: 'b',
+          q14: 'b',
+          q15: 'a'
+        };
+        let total = 0;
+        let missing = [];
+        for (let i = 1; i <= 15; i++) {
+          const q = 'q' + i;
+          const radios = document.getElementsByName(q);
+          let selected = '';
+          for (const r of radios) {
+            if (r.checked) selected = r.value;
+          }
+          const feedback = document.getElementById('feedback-' + q);
+          if (!selected) {
+            feedback.innerHTML = '';
+            missing.push(i);
+            continue;
+          }
+          if (selected === answers[q]) {
+            feedback.innerHTML = '<span style="color: #4caf50; font-size:1.5em;">✔️</span>';
+            total++;
+          } else {
+            feedback.innerHTML = '<span style="color: #e53935; font-size:1.5em;">❌</span>';
+          }
+        }
+        const volverBtn = document.getElementById('volver-btn');
+        if (missing.length > 0) {
+          document.getElementById('score').innerHTML = '<span style="color:#e53935;">Te falta responder la(s) pregunta(s): ' + missing.join(', ') + '.</span>';
+          volverBtn.style.display = 'none';
+        } else {
+          document.getElementById('score').innerHTML = 'Puntaje final: ' + total + ' / 15';
+          volverBtn.style.display = 'block';
+        }
+      }
+      function resetQuiz() {
+        for (let i = 1; i <= 15; i++) {
+          const q = 'q' + i;
+          const radios = document.getElementsByName(q);
+          for (const r of radios) {
+            r.checked = false;
+          }
+          const feedback = document.getElementById('feedback-' + q);
+          feedback.innerHTML = '';
+        }
+      }
+    </script>
+  </div>
+</body>
+</html>

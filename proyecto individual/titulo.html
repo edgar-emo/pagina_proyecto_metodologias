@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <body>
+           
+            <h1 style="font-family:'Courier New', Courier, monospace"><marquee><big><big> MATERIAS 2DO PARCIAL </big></big></marquee></h1>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0 20px 0; gap: 20px; flex-wrap: wrap;">
+              <span id="fecha-hora" style="font-size:1.1em;color:#ffe066;"></span>
+              <span id="contador" style="font-size:1.1em;color:#ffe066;"></span>
+            </div>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(79,195,247,0.55) 0%, rgba(79,195,247,0.32) 25%, transparent 50%),
+        linear-gradient(180deg,#64c8ff 0%, #0f1724 60%, #061226 100%);
+      color: #e6eef8;
+      background-attachment: fixed;
+    }
+</style>
+
+
+  <!-- Contenido aquí -->
+
+
+          <script>
+            // Fecha y hora en tiempo real
+            function actualizarFechaHora() {
+              const ahora = new Date();
+              const opciones = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute:'2-digit', second:'2-digit' };
+              document.getElementById('fecha-hora').textContent = ahora.toLocaleString('es-MX', opciones);
+            }
+            setInterval(actualizarFechaHora, 1000);
+            actualizarFechaHora();
+            // Contador de visitantes local
+            let visitas = localStorage.getItem('visitas_titulo') || 0;
+            visitas++;
+            localStorage.setItem('visitas_titulo', visitas);
+            document.getElementById('contador').textContent = 'Visitas a esta página: ' + visitas;
+          </script>
+        </body>
+      </head>
+</html>

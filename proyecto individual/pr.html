@@ -1,0 +1,76 @@
+<html>
+    
+    <head>
+        <title>Índice</title>
+        <meta charset="utf-8">
+        <meta name="pr" content="width=device-width, initial-scale=1">
+        <style>
+          .index-grid { display:flex; flex-direction:column; gap:24px; align-items:flex-start; justify-content:flex-start; padding:24px; }
+          .index-grid .item { text-align:left; display:block; width:auto; transition:color 0.2s, text-shadow 0.2s; }
+          .index-grid .item:hover { color:#4fc3f7; text-shadow:0 2px 8px #64c8ff; }
+          .index-grid .item h2 { font-size:1.1rem; margin:8px 0 0 0; }
+          .imagen{
+            height:200px; width:200px; border-radius:15px; box-shadow:2px 2px 10px rgba(0,0,0,0.3); transition:transform 0.3s, box-shadow 0.3s, filter 0.2s;
+            display:block;
+          }
+          .imagen:hover{ transform:scale(1.05); box-shadow:4px 4px 15px rgba(0,0,0,0.4); filter:brightness(1.2) saturate(1.5) drop-shadow(0 0 10px #64c8ff); }
+          body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+            margin: 0;
+            height: 100vh;
+            background:
+              radial-gradient(circle at 10% 10%, rgba(79,195,247,0.55) 0%, rgba(79,195,247,0.32) 25%, transparent 50%),
+              linear-gradient(180deg,#64c8ff 0%, #0f1724 60%, #061226 100%);
+            color: #e6eef8;
+            background-attachment: fixed;
+          }
+          h1.indice { font-size:3em; margin:18px 24px; }
+        </style>
+      <script src="js/pr.js"></script>
+    </head>
+    <body>
+
+
+        <h1 class="indice"><i>Índice</i></h1>
+
+        <div class="index-grid">
+
+                
+             <a href="Quimica.html" target="anclas">
+  <img src="img/quimica.jpg" alt="La Leyenda de la Nahuala" class="imagen">
+</a>
+            <h2><a class="item" href="Quimica.html"  target="anclas"> QUIMICA</a></h2>                         
+            </a>
+            
+
+
+             <a href="Diseña.html" target="anclas">
+  <img src="img/diseña.png" alt="La Leyenda de la llorona" class="imagen">
+</a>
+            <h2><a class="item" href="Diseña.html"  target="anclas"> DISEÑO DE SOFTWARE</a></h2>                         
+            </a>
+
+
+ <a href="cultura.html" target="anclas">
+  <img src="img/cultura.png" alt="La Leyenda de las momias" class="imagen">
+</a>
+            <h2><a class="item" href="cultura.html"  target="anclas">CULTURA DIGITAL</a></h2>                         
+            </a>
+
+             <a href="ciencias.html" target="anclas">
+  <img src="img/ciencias.jpg" alt="La Leyenda del chupacabras" class="imagen">
+</a>
+            <h2><a class="item" href="ciencias.html"  target="anclas"> CIENCIAS SOCIALES</a></h2>                         
+            </a>
+
+             <a href="recursos.html" target="anclas">
+  <img src="img/recursos.jpg" alt="La Leyenda del charro negro" class="imagen">
+</a>
+            <h2><a class="item" href="recursos.html"  target="anclas"> RECURSOS SOCIOEMOCIONAL</a></h2>                         
+            </a>
+
+             
+        </div>
+
+    </body>
+</html>
