@@ -26,6 +26,7 @@ if (contactForm) {
         
         // Get form message element
         const messageDiv = this.querySelector('.form-message');
+        if (!messageDiv) return;
         
         // Show success message
         messageDiv.textContent = '¡Gracias por tu mensaje! Nos pondremos en contacto pronto.';
