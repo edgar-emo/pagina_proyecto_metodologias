@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de Metodologías de Desarrollo de Software">
+    <title>Proyecto Metodologías</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Metodologías de Desarrollo</h1>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#metodologias">Metodologías</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bienvenido al Proyecto de Metodologías</h2>
+                <p>Explorando las mejores prácticas en desarrollo de software</p>
+            </div>
+        </section>
+
+        <section id="metodologias" class="metodologias">
+            <div class="container">
+                <h2>Metodologías Ágiles</h2>
+                <div class="metodologias-grid">
+                    <div class="metodologia-card">
+                        <h3>Scrum</h3>
+                        <p>Framework ágil para la gestión de proyectos complejos</p>
+                    </div>
+                    <div class="metodologia-card">
+                        <h3>Kanban</h3>
+                        <p>Sistema visual para gestionar el trabajo en proceso</p>
+                    </div>
+                    <div class="metodologia-card">
+                        <h3>XP (Extreme Programming)</h3>
+                        <p>Metodología enfocada en la excelencia técnica</p>
+                    </div>
+                    <div class="metodologia-card">
+                        <h3>Lean</h3>
+                        <p>Eliminación de desperdicios y maximización de valor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="equipo">
+            <div class="container">
+                <h2>Nuestro Equipo</h2>
+                <p>Un equipo dedicado al estudio y aplicación de metodologías de desarrollo</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form class="contact-form">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <div class="form-message" style="display: none;"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Proyecto Metodologías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
